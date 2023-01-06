@@ -88,7 +88,7 @@ RUN mkdir /bazel && \
 
 # Download TF Serving sources (optionally at specific commit).
 WORKDIR /tensorflow-serving
-RUN git clone --single-branch --branch=${TF_SERVING_VERSION_GIT_BRANCH} https://github.com/tensorflow/serving /tensorflow-serving && \
+RUN git clone --single-branch --branch=${TF_SERVING_VERSION_GIT_BRANCH} https://github.com/jc-su/serving /tensorflow-serving && \
     cd /tensorflow-serving && \
     git reset --hard ${TF_SERVING_VERSION_GIT_COMMIT}
 
